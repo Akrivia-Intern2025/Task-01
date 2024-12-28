@@ -10,4 +10,8 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, { enableTracing: false })],
   exports: [RouterModule]
 })
+<<<<<<< HEAD
 export class AppRoutingModule { }
+=======
+export class AppRoutingModule { }
+>>>>>>> bd93e6385bc15d841913a3a4eb5085d4cd101e4d
