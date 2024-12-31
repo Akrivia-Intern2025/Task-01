@@ -1,32 +1,79 @@
+/* Container for the login form */
 .form-container {
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #f4f7fc; /* Light background for the entire page */
 }
 
+/* Login form styling */
 .login-form {
   max-width: 400px;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
   background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for better depth */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
 }
-=======
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .login-form {
-    max-width: 400px;
-    width: 100%;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
->>>>>>> bd93e6385bc15d841913a3a4eb5085d4cd101e4d
+
+/* Input field styling */
+.login-form input {
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Focus effect for input fields */
+.login-form input:focus {
+  border-color: #007bff;
+  outline: none; /* Removes default outline */
+}
+
+/* Submit button styling */
+.login-form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  width: 100%;
+}
+
+/* Button hover effect */
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Link to the registration page */
+.signup-link {
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
